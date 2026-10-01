@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 
-//import entrada.Teclado;
 
 public class Main {
 
@@ -15,9 +14,7 @@ public class Main {
 		try {
 			List<Person> personList = ReadFile.read(fileName);
 			
-			Iterator<Person> it;
-			
-			it = personList.iterator();
+			Iterator<Person> it = personList.iterator();
 	        while (it.hasNext()) {
 	            System.out.println(it.next().toString());
 	            System.out.println();
