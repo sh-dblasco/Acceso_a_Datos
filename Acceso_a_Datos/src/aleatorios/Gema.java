@@ -10,6 +10,19 @@ public class Gema {
 	private double tamanno;		//8 bytes
 	private boolean natural;	//1 byte
 	
+	private static int contador = 1;
+	
+	
+	public Gema(String nombre, String color, double dureza, double tamanno, boolean natural) {
+		super();
+		this.id = contador;
+		contador++;
+		this.nombre = nombre;
+		this.color = color;
+		this.dureza = dureza;
+		this.tamanno = tamanno;
+		this.natural = natural;
+	}
 	
 	public Gema(int id, String nombre, String color, double dureza, double tamanno, boolean natural) {
 		super();
@@ -24,8 +37,12 @@ public class Gema {
 	
 	@Override
 	public String toString() {
-		return nombre + " [color=" + color + ", dureza=" + dureza + ", tamanno=" + tamanno
-				+ ", natural=" + natural + "]";
+		return nombre + " [id=" + id +
+				", color=" + color +
+				", dureza=" + dureza +
+				", tamanno=" + tamanno
+				+ ", natural=" + natural +
+				"]";
 	}
 	
 	//--------------------------------------------------------------------------------------------
@@ -55,6 +72,10 @@ public class Gema {
 	}
 	
 	//--------------------------------------------------------------------------------------------
+	
+	
+	
+	//--------------------------------------------------------------------------------------------
 
 	@Override
 	public int hashCode() {
@@ -71,7 +92,7 @@ public class Gema {
 			return false;
 		Gema other = (Gema) obj;
 		
-		return Objects.equals(nombre, other.nombre);
+		return Objects.equals(id, other.id);
 	}
 	
 	

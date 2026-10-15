@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"aleatorio.encapsulado"},{"l":"All Packages","u":"allpackages-index.html"}];updateSearchResults();
