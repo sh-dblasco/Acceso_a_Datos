@@ -1,4 +1,4 @@
-package ejercicioTarjeta;
+package secuencial.ejercicioTarjeta;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-		String fileName = "src/ejercicioTarjeta/datos.txt";
+		String fileName = "src/secuencial/ejercicioTarjeta/datos.txt";
 		
 		try {
 			List<Person> personList = ReadFile.read(fileName);

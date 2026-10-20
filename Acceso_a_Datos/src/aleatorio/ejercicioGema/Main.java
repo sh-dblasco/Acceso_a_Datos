@@ -1,4 +1,4 @@
-package aleatorios;
+package aleatorio.ejercicioGema;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

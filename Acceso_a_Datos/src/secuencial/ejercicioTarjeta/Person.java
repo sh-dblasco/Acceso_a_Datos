@@ -1,4 +1,4 @@
-package ejercicioTarjeta;
+package secuencial.ejercicioTarjeta;
 
 import java.io.Serializable;
 

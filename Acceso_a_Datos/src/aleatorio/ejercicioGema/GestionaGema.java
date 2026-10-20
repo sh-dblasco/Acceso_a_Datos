@@ -1,6 +1,6 @@
 //WIP: Encontrar primer id libre
 
-package aleatorios;
+package aleatorio.ejercicioGema;
 
 import java.io.File;
 import java.io.FileNotFoundException;

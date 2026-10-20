@@ -1,4 +1,4 @@
-package ejercicioTarjeta;
+package secuencial.ejercicioTarjeta;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -14,7 +14,7 @@ public class ReadFile {
 	
 	public static List<Person> read(String fileName) throws IOException, FileNotFoundException {
 		List<Person> personList = new ArrayList<Person>();
-		String objectFile = "src/ejercicioTarjeta/tarjetas.dat";
+		String objectFile = "src/secuencial/ejercicioTarjeta/tarjetas.dat";
 		
 		File file = new File (fileName);
 		BufferedReader inputStream = null;
