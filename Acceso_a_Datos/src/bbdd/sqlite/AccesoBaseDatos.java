@@ -17,7 +17,7 @@ public class AccesoBaseDatos {
 			Class.forName("org.sqlite.JDBC");
 			//2-Especificar la url de la base de datos.
 			//3-Establecer una conexión usando el driver que crea el  objeto Connection.
-			Connection conexion = DriverManager.getConnection("jdbc:sqlite:src\bbdd\sqlite\biblioteca.db");
+			Connection conexion = DriverManager.getConnection("jdbc:sqlite:src\bbdd\biblioteca.db");
 
 			//4- Crear un objeto Statement, usando Connection.
             Statement sentencia = (Statement) conexion.createStatement();
